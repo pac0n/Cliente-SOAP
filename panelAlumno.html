@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<!------ Pac0n ---------->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="XJGV" content="">
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>DDPC</title>
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top nav-bar-teal">
+        <!-- boton de apertura del sidebar -->
+        <span style="margin:0 20px;font-size: 30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+      
+        <div id="mySidenav" class="sidenav">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+          <h1>¡Bienvenido Usuario!</h1>
+          <a href="#">Nueva petición</a>
+          <a href="index.html">Cerrar sesión</a>
+        </div>
+        <a class="navbar-brand" href="#">DDPC</a>
+      </nav>
+    </header>
+      
+    <body>
+      <div class="container">
+        <br><br><br>
+        <form>
+          <h1>Nueva solicitud</h1>
+          <div class="form-row">
+            
+            <div class="form-group col-md-12">
+              <label for="newApplicationTittle">Titulo</label>
+              <input type="text" class="form-control" id="newApplicationTittle" placeholder="Titulo">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="descriptionNewAplication">Descripcion</label>
+              <textarea name="descriptionNewAplication" class="form-control" id="descriptionNewAplication" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Direccion de casa</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Calle / Numero / Colonia">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Direccion de la institución</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Nombre / Colonia / Zona escolar" >
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">Ciudad</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">Estado</label>
+              <select id="inputState" class="form-control">
+                <option selected>Elegir...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">CP</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <button type="submit" class="btn teal-btn">Enviar</button>
+        </form>    
+      </div>
+    </body>  
+      
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right teal"><a href="#">Arriba</a></p>
+        <p>&copy; 2018 DDPC &middot; <a href="#">Términos y condiciones</a> &middot; </p>
+      </footer>
+    </main>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
